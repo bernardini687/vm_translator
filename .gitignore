@@ -1,0 +1,9 @@
+/coverage
+/node_modules
+/test/*
+
+tmp*
+*.vm
+todo.txt
+
+!/test/Test.vm

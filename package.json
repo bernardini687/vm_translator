@@ -1,0 +1,28 @@
+{
+  "private": true,
+  "scripts": {
+    "pre-commit:msg": "echo 'Pre-commit checks...'",
+    "lint": "standard",
+    "fix": "standard || (echo 'standard: Running to fix...' && standard --fix)",
+    "test": "jest --runInBand",
+    "test:watch": "jest --watch --runInBand"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "pre-commit": "^1.2.2",
+    "standard": "^16.0.3"
+  },
+  "dependencies": {
+    "event-stream": "^4.0.1"
+  },
+  "pre-commit": [
+    "pre-commit:msg",
+    "lint",
+    "test"
+  ],
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  }
+}
