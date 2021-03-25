@@ -1,1 +1,17 @@
-push constant 42
+push constant 40 // *SP = 40; SP++
+// @42
+// D=A
+// @SP
+// A=M
+// M=D
+// @SP
+// M=M+1
+push constant 2 // *SP = 2; SP++
+// @2
+// D=A
+// @SP
+// A=M
+// M=D
+// @SP
+// M=M+1
+add
