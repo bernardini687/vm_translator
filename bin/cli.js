@@ -3,7 +3,7 @@
 const [filename] = process.argv.slice(2)
 
 if (filename === undefined) {
-  console.error('no argument given')
+  console.error('ERROR: no filename given')
   process.exit(1)
 } else {
   start(filename)
